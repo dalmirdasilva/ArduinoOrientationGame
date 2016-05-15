@@ -1,5 +1,5 @@
 Settings/Settings.o: ../Settings/Settings.cpp \
- /work/opensource/personal/microcontroller/arduino/ArduinoLibraries/ArduinoOrientationGame/main.h \
+ /work/opensource/personal/microcontroller/arduino/ArduinoLibraries/ArduinoOrientationGame/arduino/main.h \
  /work/opensource/personal/microcontroller/arduino/ArduinoLibraries/ArduinoCore/Arduino.h \
  /work/opensource/personal/microcontroller/arduino/ArduinoLibraries/ArduinoCore/binary.h \
  /work/opensource/personal/microcontroller/arduino/ArduinoLibraries/ArduinoCore/WCharacter.h \
@@ -19,7 +19,7 @@ Settings/Settings.o: ../Settings/Settings.cpp \
  /work/opensource/personal/microcontroller/arduino/ArduinoLibraries/ArduinoIO/SeekableInputStream/SeekableInputStream.h \
  /work/opensource/personal/microcontroller/arduino/ArduinoLibraries/ArduinoIO/InputStream/InputStream.h
 
-/work/opensource/personal/microcontroller/arduino/ArduinoLibraries/ArduinoOrientationGame/main.h:
+/work/opensource/personal/microcontroller/arduino/ArduinoLibraries/ArduinoOrientationGame/arduino/main.h:
 
 /work/opensource/personal/microcontroller/arduino/ArduinoLibraries/ArduinoCore/Arduino.h:
 

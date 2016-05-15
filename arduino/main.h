@@ -1,6 +1,10 @@
 #ifndef __MAIN_H__
 #define __MAIN_H__ 1
 
+#define INFINITY_TIMEOUT                0
+#define CONNECTION_TRY_TIMEOUT          100
+#define IS_CONNECTED_TIMEOUT            500
+
 #define EXTERNAL_EEPROM_ADDRESS         0xa0
 
 #define ISR_VECTOR                      0

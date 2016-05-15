@@ -64,11 +64,18 @@ void isr() {
     triggered = true;
 }
 
+void checkConnection() {
+    if (!device.isConnected(IS_CONNECTED_TIMEOUT)) {
+        Serial.println("NOT connected");
+        device.connect(CONNECTION_TRY_TIMEOUT);
+    }
+}
+
 void setup() {
     Serial.begin(9600);
     pinMode(STATUS_LED_PIN, OUTPUT);
     settings.load();
-    device.connect(INFINITY_TIMEOUT);
+    checkConnection();
     setupAccelerometer();
     attachInterrupt(ISR_VECTOR, isr, FALLING);
     Serial.println("initialized");
@@ -100,6 +107,11 @@ void loop() {
 
     if (device.receiveMessage(&message)) {
         processReceivedMessage();
+    }
+
+    if (millis() % 1000) {
+        Serial.println("checkConnection");
+        checkConnection();
     }
 
     if (triggered) {
